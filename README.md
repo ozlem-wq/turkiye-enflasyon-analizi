@@ -35,7 +35,7 @@ Proje, temel olarak Python ve Pandas kütüphaneleri kullanılarak tek bir Jupyt
 
 Projeyi yerel bilgisayarınızda çalıştırmak için:
 
-1.  Bu depoyu klonlayın (`git clone [REPO_LINK]`).
+1.  Bu depoyu klonlayın (`git clone [https://github.com/ozlem-wq/turkiye-enflasyon-analizi.git]`).
 2.  Gerekli kütüphaneleri kurun: `pip install pandas numpy matplotlib seaborn`
 3.  `notebooks/01_veri_toplama_ve_duzenleme.ipynb` dosyasını Jupyter Notebook ile açın ve **tüm hücreleri çalıştırın.**
 
