@@ -1,4 +1,3 @@
-# turkiye-enflasyon-analizi
 # 📈 Türkiye Politika Faizi vs. Yıllık Enflasyon Analizi (2005 - 2025)
 
 Bu proje, Türkiye Cumhuriyeti Merkez Bankası (TCMB) politika faiz oranları ile Türkiye İstatistik Kurumu (TÜİK) tarafından açıklanan Tüketici Fiyat Endeksi (TÜFE) yıllık değişim oranları arasındaki tarihsel ilişkiyi inceleyen bir zaman serisi analizidir.
@@ -28,12 +27,7 @@ Projenin analizi, zaman serisi grafiği üzerinden aşağıdaki temel ekonomik b
 
 ### Analiz Metodolojisi
 
-Proje, temel olarak Python ve Pandas kütüphaneleri kullanılarak tek bir Jupyter Notebook'ta yürütülmüştür:
-
-1.  **Veri Temizliği:** Tarih formatı dönüşümleri ve ondalık (virgül/nokta) hataları temizlendi.
-2.  **Veri Birleştirme:** İki farklı frekanstaki (günlük faiz, aylık enflasyon) veri setleri `Tarih` sütunu üzerinden birleştirildi.
-3.  **Eksik Veri Doldurma:** Faiz oranlarındaki eksik değerler, son geçerli faiz oranının ileriye dönük olarak doldurulması (`ffill`) yöntemiyle tamamlandı.
-4.  **Görselleştirme:** Matplotlib kütüphanesi kullanılarak sonuçlar çizgi grafikte sunuldu.
+Proje, temel olarak Python ve Pandas kütüphaneleri kullanılarak tek bir Jupyter Notebook'ta yürütülmüştür. Tüm kodlar, temizlenmiş ve tek tuşla çalışır hale getirilmiştir.
 
 ---
 
@@ -41,23 +35,9 @@ Proje, temel olarak Python ve Pandas kütüphaneleri kullanılarak tek bir Jupyt
 
 Projeyi yerel bilgisayarınızda çalıştırmak için:
 
-1.  Bu depoyu klonlayın (`git clone https://github.com/ozlem-wq/turkiye-enflasyon-analizi.git`).
+1.  Bu depoyu klonlayın (`git clone [REPO_LINK]`).
 2.  Gerekli kütüphaneleri kurun: `pip install pandas numpy matplotlib seaborn`
-3.  `notebooks/01_veri_toplama_ve_duzenleme.ipynb` dosyasını Jupyter Notebook ile açın.
-4.  Dosyadaki **ilk iki hücreyi sırayla çalıştırın**. Bu, tüm veri hazırlık, temizleme ve görselleştirme adımlarını otomatik olarak yürütecektir.
+3.  `notebooks/01_veri_toplama_ve_duzenleme.ipynb` dosyasını Jupyter Notebook ile açın ve **tüm hücreleri çalıştırın.**
 
-Grafik çıktısı, **`figures/faiz_enflasyon_karsilastirma.png`** yoluna kaydedilecektir.
-
----
-
-## 📁 Dosya Yapısı
-turkiye-enflasyon-analizi/
-├── data/
-│   ├── tcmb_faiz_oranlari.csv    # Ham faiz verisi
-│   └── tcmb_enflasyon_verileri.txt # Ham enflasyon verisi
-├── figures/
-│   └── faiz_enflasyon_karsilastirma.png # Çıktı Grafik
-├── notebooks/
-│   └── 01_veri_toplama_ve_duzenleme.ipynb # Tüm Analiz Kodu
-└── README.md
+Grafik çıktısı, **`figures/faiz_enflasyon_karsilastirma.png`** yolunda otomatik olarak oluşacaktır.
 
